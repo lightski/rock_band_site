@@ -14,7 +14,7 @@
 <body>
 
 <?php
-echo "<h1>PHP rocks!</h1>"
+echo "<h1>PHP rocks!</h1>";
 ?>
 
 </body>
