@@ -1,22 +1,19 @@
-﻿<!DOCTYPE html>
+﻿<?php require_once 'build_functions.php'; ?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>	
-	<title>Red Dawn: Home</title>
 	<meta charset="utf-8">
-	<link href="rock_style.css" rel="stylesheet" type="text/css">
-	<script src="jquery-1.9.1.min.js"></script>
-	<script>
-		//javascript or jquery (or both) go here
-	</script>
+	<title>Red Dawn</title>
+	<link href="red_dawn_style.css" rel="stylesheet" type="text/css">
+	<script src="red_dawn_scripts.js" type="text/javascript"></script>
 </head>
 
 <body>
 
 <?php
-echo "<h1>PHP rocks!</h1>";
+echo $header_nav = build_header_nav();
 ?>
 
 </body>
-
 </html>

@@ -1,0 +1,21 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+li {
+	display: inline;
+}
+#porthole_front {
+	position: relative;
+	z-index: 1;
+}
+#porthole_back {
+	position: relative;
+	top: -88px;
+	z-index: -1;
+	height: 83px;
+	width: 83px;
+	overflow: hidden;
+	background: #999 url('porthole_background.png') no-repeat 0px 0px;
+}
+
