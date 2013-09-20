@@ -2,20 +2,33 @@ body {
 	padding: 0;
 	margin: 0;
 }
+header {
+	width: 80%;
+}
 li {
 	display: inline;
+	font-size: 2em;
+}
+h1.logo{		 /*logo image replaces h1 text*/
+	width: 800px;
+	height: 394px;
+	background: url(logo.png);
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 #porthole_front {
+	left: 25%;
 	position: relative;
 	z-index: 1;
 }
 #porthole_back {
 	position: relative;
-	top: -88px;
+	left: 25%;
+	top: -212px;
 	z-index: -1;
-	height: 83px;
-	width: 83px;
+	height: 208px;
+	width: 208px;
 	overflow: hidden;
 	background: #999 url('porthole_background.png') no-repeat 0px 0px;
 }
-
