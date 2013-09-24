@@ -10,12 +10,12 @@ function build_header_nav() {
 		</header>
 		<nav>
 			<ul>
-				<li onmouseover=\"porthole_shift('blog')\" onmouseout=\"record_last('blog')\"><a href='#'>Blog</a></li>
-				<li onmouseover=\"porthole_shift('about')\" onmouseout=\"record_last('about')\"><a href='#'>About</a></li>
-				<li onmouseover=\"porthole_shift('members')\" onmouseout=\"record_last('members')\"><a href='#'>Members</a></li>
-				<li onmouseover=\"porthole_shift('store')\" onmouseout=\"record_last('blog')\"><a href='#'>Store</a></li>
-				<li onmouseover=\"porthole_shift('music')\" onmouseout=\"record_last('blog')\"><a href='#'>Music</a></li>
-				<li onmouseover=\"porthole_shift('contact')\" onmouseout=\"record_last('blog')\"><a href='#'>Contact</a></li>
+				<li onmouseover=\"porthole_shift('blog')\"><a href='#'>Blog</a></li>
+				<li onmouseover=\"porthole_shift('about')\"><a href='#'>About</a></li>
+				<li onmouseover=\"porthole_shift('members')\"><a href='#'>Members</a></li>
+				<li onmouseover=\"porthole_shift('store')\"><a href='#'>Store</a></li>
+				<li onmouseover=\"porthole_shift('music')\"><a href='#'>Music</a></li>
+				<li onmouseover=\"porthole_shift('contact')\"><a href='#'>Contact</a></li>
 			</ul>
 		</nav>";
 	return $output;
