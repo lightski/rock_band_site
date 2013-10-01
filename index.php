@@ -10,10 +10,8 @@
 </head>
 
 <body>
-
 <?php
 echo $header_nav = build_header_nav();
 ?>
-
 </body>
 </html>
