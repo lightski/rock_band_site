@@ -9,6 +9,10 @@ li {
 	display: inline;
 	font-size: 2em;
 }
+nav {
+	position: relative;
+	top: -150px;
+}
 h1.logo{		 /*logo image replaces h1 text*/
 	width: 800px;
 	height: 394px;

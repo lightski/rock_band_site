@@ -1,7 +1,4 @@
-//TO-DOs:
-// -fix weird bug when rapidly mousing-over the nav causes back-picture to go away completely. 
-//   perhaps use a boundary check on the increment and decrement functions?
-//	-fix weird layout whitespace gaps (css)
+//this script primarily changes the porthole image
 
 //last_region and new_region are referenced by two functions
 var last_region = 0;
@@ -55,11 +52,11 @@ function porthole_shift(target_region) {
 		//second, check if the new x coordinates are greater or less than the current ones
 		if (new_region < last_region) {	
 			// decrement x coordinate to reach new_region; time is milliseconds (1/4 second here)
-			decrementer = setInterval(function(){decrement_image(last_region,new_region);}, 250);
+			decrementer = setInterval(function(){decrement_image(last_region,new_region);}, 125);
 			interval_set = true; //no more intervals will be set until this is true
 		} else if (new_region > last_region) {
 			//increment x coordinate to reach new_region
-			incrementer = setInterval(function(){increment_image(last_region,new_region);}, 250);
+			incrementer = setInterval(function(){increment_image(last_region,new_region);}, 125);
 			interval_set = true; //no more intervals set until this is false
 		}
 	}
@@ -67,12 +64,12 @@ function porthole_shift(target_region) {
 
 function decrement_image(last_x,new_x){
 	//change last_x to new_x by DEcreasing 
-		if (last_x == new_x) {
+		if (last_x <= new_x) {
 			last_region = new_region; //save value for next run
 			interval_set = false; //other intervals can now trigger
 			clearInterval(decrementer);
 		} else {
-			last_x -= 52;
+			last_x -= 26;
 			last_region = last_x;
 			back_position = last_x.toString() + "px 0px";
 			porthole_back.style.backgroundPosition = back_position;
@@ -81,15 +78,14 @@ function decrement_image(last_x,new_x){
 
 function increment_image(last_x,new_x){
 	//change last_x to new_x by INcreasing 
-	if (last_x == new_x) {
+	if (last_x >= new_x) {
 		last_region = new_region; //save value for next run
 		interval_set = false; //other intervals can now trigger
 		clearInterval(incrementer);
 	} else {
-		last_x += 52;
+		last_x += 26;
 		last_region = last_x;
 		back_position = last_x.toString() + "px 0px";
 		porthole_back.style.backgroundPosition = back_position;
 	}
 }
-
