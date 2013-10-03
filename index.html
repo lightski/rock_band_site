@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Red Dawn</title>
+ <link rel="stylesheet" href="stylesheet.css" type="text/css">
+ <script src="jquery.js"></script>
+ <script src="jquery.sticky.js"></script>
+ <script src="red_dawn_scripts.js"></script>
+ <script>
+  $(document).ready(function(){
+    $("nav").sticky({topSpacing:0});
+  });
+ </script>  
+</head>
+<body>
+<div id="wrapper">
+
+</div>
+<header>
+<h1 id="logo">Red Dawn</h1>
+</header>
+<nav>
+	<ul>
+		<li onmouseover="porthole_shift('blog')"><a href="#nav1">nav1</a></li>
+		<li onmouseover="porthole_shift('about')"><a href="#nav2">nav2</a></li>
+		<li onmouseover="porthole_shift('members')"><a href="#nav3">nav3</a></li>
+		<li><img id="porthole_front" src="porthole_front.png" height="208px" width="208px" alt="porthole"></li>
+		<li><div id="porthole_back"></div></li>
+		<li onmouseover="porthole_shift('store')"><a href="#nav4">nav4</a></li>
+		<li onmouseover="porthole_shift('music')"><a href="#nav5">nav5</a></li>
+		<li onmouseover="porthole_shift('contact')"><a href="#nav6">nav6</a></li>
+	</ul>
+</nav>
+<div id="cont">
+	<div id="nav1">
+		<div id="rect1">	
+			<h2>nav1</h2>
+		</div>		
+	</div>
+	<div id="nav2">
+		<div id="rect2">
+			<h2>nav2</h2>
+		</div>
+	</div>
+	<div id="nav3">
+		<div id="rect3">
+			<h2>nav3</h2>
+		</div>
+	</div>
+	<div id="nav4">
+		<div id="rect4">
+			<h2>nav4</h2>
+		</div>
+	</div>
+	<div id="nav5">
+		<div id="rect5">
+			<h2>nav5</h2>
+		</div>
+	</div>
+	<div id="nav6">
+		<div id="rect6">
+			<h2>nav6</h2>
+		</div>
+	</div>
+</div><!--closes #cont-->
+</body>
+</html>
