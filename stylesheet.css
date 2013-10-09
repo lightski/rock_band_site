@@ -1,43 +1,48 @@
+/*TO-DOs:
+ * change link behavior so the nav doesn't cover the content
+ *
 /*page elements alphabetically*/
-a{
+a {
 	text-decoration: none;
 	color: white;
 }
-header{	
+header {	
 	background-color:#646466;
 	position:relative;
+	top: 20px;
 	margin:auto;
 	width: 960px;
 	height: 200px;
-	top:100px;
 	z-index:100;
 	border:5px solid #646466;
 }
-
-nav{
+nav {
 	position:relative;
+	top: 50px;
 	width: 960px;
 	z-index:100;
 	border:1px solid #646466;
+	border-radius: 15px;
 }
-ul{	
+ul {	
 	width:100%;
 	text-align:center;
 	display: table;
 }
-li{	
+li{ 
 	display:inline;	
 	display: table-cell;
 	font-size: 2em;
 }
 /*IDs alphabetically*/
-#cont{
+#cont {
 	position:relative;
 	width:960px;
 	margin: auto;
 	z-index:99;
 }
-#logo { /*logo image replaces h1 text*/
+#logo { 
+	/*logo image replaces h1 text*/
 	width: 960px;
 	height: 200px;
 	background: url(logo.png);
@@ -45,23 +50,28 @@ li{
 	white-space: nowrap;
 	overflow: hidden;
 }
-#nav1, #nav2, #nav3, #nav4, #nav5, #nav6{
+#nav1, #nav2, #nav3, #nav4, #nav5, #nav6 {
 	margin: 0px 0px 600px 0px;
 }
 #porthole_back {
 	position: absolute;
-	left: 438px;
+	left: 445px;
 	top: 38px;
 	z-index: -1;
 	height: 150px;
 	width: 150px;
 	overflow: hidden;
 	background: #999 url('porthole_background.png') no-repeat 0px 0px;
+	/*draw a circle*/
+	border: 1px solid black;
+	border-radius: 50%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 #porthole_front {
 	z-index: 1;
 }
-#rect1, #rect2, #rect3, #rect4, #rect5, #rect6{
+#rect1, #rect2, #rect3, #rect4, #rect5, #rect6 { 
 	background-color:white;
 	border-radius:20px;
 	width:960px;
@@ -70,7 +80,7 @@ li{
 	margin:60px 0px 100px 0px;
 	z-index:3;
 }
-#wrapper{
+#wrapper {
 	background-color:#043345;
 	position:absolute;
 	width: 100%;
