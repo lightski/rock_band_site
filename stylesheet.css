@@ -1,6 +1,8 @@
 /*TO-DOs:
  * change link behavior so the nav doesn't cover the content
- *
+ * finalize porthole back/front positioning
+ */
+
 /*page elements alphabetically*/
 a {
 	text-decoration: none;
@@ -24,12 +26,12 @@ nav {
 	border:1px solid #646466;
 	border-radius: 15px;
 }
-ul {	
+nav ul {	
 	width:100%;
 	text-align:center;
 	display: table;
 }
-li{ 
+nav li{ 
 	display:inline;	
 	display: table-cell;
 	font-size: 2em;

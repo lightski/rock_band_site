@@ -1,3 +1,8 @@
+//TO-DO
+// change viewport area of porthole_back to reflect new div size and shape
+// add a "return to top" arrow
+// craft a better mobile experience
+
 //this script primarily changes the porthole image
 
 //last_region and new_region are referenced by two functions
@@ -25,22 +30,22 @@ function porthole_shift(target_region) {
 
 	switch(target_region) {
 		//first, set variable to where the viewport is going
-		case 'blog':
+		case 'news':
 			new_region = x_coordinates[0];
 			break;
-		case 'about':
+		case 'music':
 			new_region = x_coordinates[1];
 			break;
-		case 'members':
+		case 'tours':
 			new_region = x_coordinates[2];
 			break;
 		case 'store':
 			new_region = x_coordinates[3];
 			break;
-		case 'music':
+		case 'merch':
 			new_region = x_coordinates[4];
 			break;
-		case 'contact':
+		case 'connect':
 			new_region = x_coordinates[5];
 			break;
 	}
