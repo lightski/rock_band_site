@@ -1,8 +1,15 @@
 /*TO-DOs:
- * change link behavior so the nav doesn't cover the content
- * finalize porthole back/front positioning
- */
+ * change link behavior so the nav doesn't cover the content*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   
+   reset
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
+ 
+ 
 /*page elements alphabetically*/
 a {
 	text-decoration: none;
@@ -20,21 +27,37 @@ header {
 }
 nav {
 	position:relative;
-	top: 50px;
+	top:40px;
+	margin:10px auto;
 	width: 960px;
 	z-index:100;
-	border:1px solid #646466;
-	border-radius: 15px;
+	
 }
+nav a{
+	width:120px;
+	padding:10px 22px;
+
+}
+nav a:hover{
+background-color:black;
+color:gray;
+} 
+nav a:active  {color:indigo;} 
+
 nav ul {	
-	width:100%;
+
+	margin: auto;
 	text-align:center;
-	display: table;
+
+	display: inline;
+		 text-align:center;
 }
-nav li{ 
-	display:inline;	
+nav li{ 	
+	position:relative;
 	display: table-cell;
 	font-size: 2em;
+	vertical-align: top;
+
 }
 /*IDs alphabetically*/
 #cont {
@@ -42,51 +65,58 @@ nav li{
 	width:960px;
 	margin: auto;
 	z-index:99;
+	
 }
 #logo { 
 	/*logo image replaces h1 text*/
 	width: 960px;
-	height: 200px;
-	background: url(logo.png);
+	height: 210px;
+	margin:auto;
+	background: url(img/logo.png) no-repeat;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 }
-#nav1, #nav2, #nav3, #nav4, #nav5, #nav6 {
+#news, #music, #tours, #merch, #bio, #connect{
 	margin: 0px 0px 600px 0px;
+	padding: 100px 0 0 0;
 }
-#porthole_back {
-	position: absolute;
-	left: 445px;
-	top: 38px;
+#porthole_back{
+	position:relative;
+	top:12px;
 	z-index: -1;
-	height: 150px;
-	width: 150px;
+	height: 208px;
+	width: 208px;
+	margin:16px;
 	overflow: hidden;
-	background: #999 url('porthole_background.png') no-repeat 0px 0px;
+	background: #999 url('img/porthole_background.png') no-repeat;
 	/*draw a circle*/
-	border: 1px solid black;
 	border-radius: 50%;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-#porthole_front {
-	z-index: 1;
+#porthole_front{
+	position:relative;
+	top:-90px;
+	height: 240px;
+	width: 240px;
+	background: url('img/porthole_front.png') no-repeat;
+
 }
 #rect1, #rect2, #rect3, #rect4, #rect5, #rect6 { 
 	background-color:white;
 	border-radius:20px;
-	width:960px;
-	height:350px;
+	width:930;
+	min-height:350px;
 	opacity:0.6;
-	margin:60px 0px 100px 0px;
-	z-index:3;
+		padding:15px;
+	
 }
 #wrapper {
-	background-color:#043345;
+	background-color:black;
 	position:absolute;
 	width: 100%;
-	height: 5500px;
+	height: 7000px;
 	z-index:1;
 	/*Gradient Setup:*/
 	background: #043345; /* Old browsers */
@@ -98,3 +128,4 @@ nav li{
 	background: linear-gradient(to bottom,  #043345 0%,#000000 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#043345', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
+
