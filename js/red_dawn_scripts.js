@@ -1,4 +1,6 @@
 /*TO-DO
+ * fix jquery min js error
+ * implement skitter slideshow plugin
 * add a "return to top" arrow
 * craft a better mobile experience
 */
@@ -14,6 +16,12 @@ var incrementer;
 var decrementer;
 //variable to stop function if an interval is already set
 var interval_set = false;
+
+//initialize plugins for sticky nav and slideshow
+$(document).ready(function(){
+   $("nav").sticky({topSpacing:0});
+   $(".box_skitter_large").skitter();
+});
 
 function porthole_shift(target_region) {
 	//shift the porthole image on mouseover of navigation

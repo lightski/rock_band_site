@@ -3,15 +3,14 @@
 <head>
  <meta charset="utf-8">
  <title>Red Dawn Steampunk Band</title>
- <link rel="stylesheet" href="stylesheet.css" type="text/css">
- <script src="jquery.js"></script>
- <script src="jquery.sticky.js"></script>
- <script src="red_dawn_scripts.js"></script>
- <script>
-  $(document).ready(function(){
-    $("nav").sticky({topSpacing:0});
-  });
- </script>  
+ <link type="text/css" rel="stylesheet" href="css/red_dawn_stylesheet.css">
+ <link type="text/css" rel="stylesheet" href="css/skitter.styles.css">
+ <script src="js/jquery.min.js"></script>
+ <script src="js/jquery.sticky.js"></script>
+ <script src="js/jquery.easing.js"></script>
+ <script src="js/jquery.animate-colors-min.js"></script>
+ <script src="js/jquery.skitter.min.js"></script>
+ <script src="js/red_dawn_scripts.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -79,7 +78,7 @@
 	<div id="merch">
 		<div id="rect4">
 			<h2>Merch</h2>
-			<p>Buy a t-shirt, ye scurvey dogs!</p>
+			<p>Buy a t-shirt, ye scurvey dogs and dogesses!</p>
 			<!--
 			<img src="img/red_dawn_tshirt1.jpeg" alt="Red Dawn t-shirt design #1">
 			<img src="img/red_dawn_tshirt2.jpeg" alt="Red Dawn t-shirt design #2">
@@ -88,9 +87,35 @@
 		</div>
 	</div>
 	<div id="bio">
-		<div id="rect5">
-			<h2>Bio</h2>
-			<p>Slideshow of our Bios!</p>
+	<h2>Bio</h2>
+	<div id="rect5" class="box_skitter box_skitter_large">
+			<ul>
+				<li>
+					<a href="#cut"><img src="img/red_dawn_tshirt1.jpeg" class="cut"></a>
+					<div class="label_text"><p>Dawn Kafka</p></div>
+					<div class="info_slide"><p>Dawn biography here</p></div>
+				</li>
+				<li>
+					<a href="#cut"><img src="img/red_dawn_tshirt1.jpeg"></a>
+					<div class="label_text"><p>Band Member 2</p></div>
+					<div class="info_slide"><p>Dawn biography here</p></div>
+				</li>
+				<li>
+					<a href="#cut"><img src="img/red_dawn_tshirt1.jpeg"></a>
+					<div class="label_text"><p>Band3</p></div>
+					<div class="info_slide"><p>Dawn biography here</p></div>
+				</li>
+				<li>
+					<a href="#cut"><img src="img/red_dawn_tshirt1.jpeg"></a>
+					<div class="label_text"><p>b mem 4</p></div>
+					<div class="info_slide"><p>Dawn biography here</p></div>
+				</li>
+				<li>
+					<a href="#cut"><img src="img/red_dawn_tshirt1.jpeg"></a>
+					<div class="label_text"><p>me</p></div>
+					<div class="info_slide"><p>me biography here</p></div>
+				</li>
+			</ul>
 		</div>
 	</div>
 	<div id="connect">
