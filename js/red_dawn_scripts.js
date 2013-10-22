@@ -1,7 +1,5 @@
 /*TO-DO
- * fix jquery min js error
- * implement skitter slideshow plugin
-* add a "return to top" arrow
+* add a "return to top" arrow-the porthole
 * craft a better mobile experience
 */
 
@@ -20,7 +18,7 @@ var interval_set = false;
 //initialize plugins for sticky nav and slideshow
 $(document).ready(function(){
    $("nav").sticky({topSpacing:0});
-   $(".box_skitter_large").skitter();
+   simpleSlide();
 });
 
 function porthole_shift(target_region) {

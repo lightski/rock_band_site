@@ -4,17 +4,14 @@
  <meta charset="utf-8">
  <title>Red Dawn Steampunk Band</title>
  <link type="text/css" rel="stylesheet" href="css/red_dawn_stylesheet.css">
- <link type="text/css" rel="stylesheet" href="css/skitter.styles.css">
- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
  <script src="js/jquery.sticky.js"></script>
- <script src="js/jquery.easing.js"></script>
- <script src="js/jquery.animate-colors-min.js"></script>
- <script src="js/jquery.skitter.min.js"></script>
+ <script src="js/jquery.simpleSlide.js"></script>
  <script src="js/red_dawn_scripts.js"></script>
 </head>
 <body>
 <div id="wrapper">
-	<!--holds gradient-->
+	<!--gradient here-->
 </div>
 <header>
 <h1 id="logo">Red Dawn</h1>
@@ -24,7 +21,7 @@
 		<li ><a href="#news" onmouseover="porthole_shift('news')">News</a></li>
 		<li onmouseover="porthole_shift('music')"><a href="#music">Music</a></li>
 		<li onmouseover="porthole_shift('tours')"><a href="#tours">Tours</a></li>
-		<li><div id="porthole_front"><div id="porthole_back"></div></li>
+		<li><div id="porthole_front"><div id="porthole_back"></div></div></li>
 		<li onmouseover="porthole_shift('merch')"><a href="#merch">Merch</a></li>
 		<li onmouseover="porthole_shift('bio')"><a href="#bio">Bio</a></li>
 		<li onmouseover="porthole_shift('connect')"><a href="#connect">Connect</a></li>
@@ -86,53 +83,72 @@
 	</div>
 	<div id="bio">
 	<h2>Bio</h2>
-	<div id="rect5" class="box_skitter box_skitter_large">
-			<ul>
-				<li>
-					<a href="#cut"><img src="img/dawn_kafka_1.jpeg" class="cut"></a>
-					<div class="label_text">
-						<p>Dawn Kafka</p>
-						<p>Bio goes here.</p>
-					</div>
-				</li>
-				<li>
-					<a href="#cut"><img src="img/bito_buhzinsky.jpeg" class="cut"></a>
-					<div class="label_text">
-						<p>Bito Buhzinsky</p>
-						<p>Bito biography here</p>
-					</div>
-				</li>
-				<li>
-					<a href="#cut"><img src="img/taryn.jpeg" class="cut"></a>
-					<div class="label_text">
-						<p>Taryn Placeholder</p>
-						<p>Taryn biography here</p>
-					</div>
-				</li>
-				<li>
-					<a href="#cut"><img src="img/garret.jpeg" class="cut"></a>
-					<div class="label_text">
-						<p>Garret Placeholder</p>
-						<p>Garret biography here</p>
-					</div>
-				</li>
-				<li>
-					<a href="#cut"><img src="img/dawn_kafka_2.jpeg" class="cut"></a>
-					<div class="label_text">
+	<div id="rect5">
+	   <div	class="simpleSlide-window" rel="1">
+			<div class="simpleSlide-tray" rel="1">
+				<div class="simpleSlide-slide" rel="1" alt="1">
+					<img src="img/dawn_kafka_1.jpeg">
+					<div class="bio_text">
+					<p>Dawn Kafka, guitarist, lead singer</p>
+					<p>Age: 28</p>
+					<p class="">Dawn was born in the heart of 
+					Chernobyl in a lower class family, days before
+					<br>the disastrous explosion. They quickly moved 
+					to St. Petersburg. Despite this, <br>she began 
+					work at 9 years old, repairing instruments at 
+					her father's shop to <br>help earn money for her 
+					family. By the time she was 12, she was 
+					building<br> guitars and drum sets from the 
+					ground up, and knew how to skillfully play
+					13 <br>different instruments. At age 15, 
+					her family moved to the Americas to 
+					start a <br>better life and to receive medical 
+					treatment for Dawn not available in Russia.
+					<br>Dawn continued her passion in music, and she 
+					became a metalworker at 19 <br>years old to earn 
+					a steady income. There, she met the rest of her 
+					band, and <br>they found their similarities in 
+					struggles and music bonded them	on a strong<br>
+					level. Battling poverty and being an outsider 
+					most of her life because of her <br>illness, 
+					Dawn finds inspiration in the struggles she once 
+					endured. She <br>believes that every person has 
+					the opportunity to rise up, but knows they are 
+					<br>often wrongfully pushed aside. Through Red 
+					Dawn, her goal is to inspire the <br>forgotten to 
+					make a name for themselves and be remembered.</p>
+				</div>
+				</div>		
+				<div class="simpleSlide-slide" rel="1" alt="2">	
+					<img src="img/bito_buhzinsky.jpeg">
+					<p>Bito Buhzinsky</p>
+					<p>Bito biography here</p>
+				</div>
+				<div class="simpleSlide-slide" rel="1" alt="3">
+					<img src="img/taryn.jpeg">
+					<p>Taryn Name</p>
+					<p>Taryn biography here</p>
+				</div>
+				<div class="simpleSlide-slide" rel="1" alt="4">
+					<img src="img/garret.jpeg">
+					<p>Garret Placeholder</p>
+					<p>Garret biography here</p>
+				</div>
+				<div class="simpleSlide-slide" rel="1" alt="5">
+					<img src="img/dawn_kafka_2.jpeg">
 						<p>John Placeholder</p>
 						<p>John's Bio Here</p>
 					</div>
-				</li>
-				<li>
-					<a href="#cut"><img src="img/dan_small.jpeg" class="cut"></a>
-					<div class="label_text">
-						<p>Dan Placeholder</p>
-						<p>Dan biography here</p>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
+				<div class="simpleSlide-slide" rel="1" alt="6">
+					<img src="img/dan_small.jpeg">
+					<p>Dan Placeholder</p>
+					<p>Dan biography here</p>
+				</div>
+				</div><!-- closes simpleSlide tray -->
+			</div><!-- closes simpleSlide window -->
+			<div class="left-button" rel="1">&lt;previous</div>
+			<div class="right-button" rel="1">next&gt;</div>
+		</div><!-- closes #rect5 -->
 	<div id="connect">
 		<div id="rect6">
 			<h2>Connect</h2>
