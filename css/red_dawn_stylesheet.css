@@ -51,32 +51,50 @@ nav li{
 	display: table-cell;
 	font-size: 2em;
 	vertical-align: top;
-
-}
-p {
-	word-wrap: normal;
 }
 
 /* Classes alphabetically */
 .bio_text {
-	float: right;
+	width: 600px;
+	float: left;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
-.left-button {
-	color: red;
-	width: 50px;
-	height: 50px;
-	z-index: 10;
+.bio_image {
+	/* the slide plays best if width is set here.
+	 *  all the images are actually 300px wide, so I'm
+	 *	not sure why...but it works so it's staying.
+	 */
+	width: 300px;
 	float: left;
 }
-.right-button {
+.left-button {
+	padding: 2px;
 	color: red;
-	width: 50px;
-	height: 50px;
+	z-index: 10;
+	float: left;
+	position: relative;
+	bottom: 20px;
+	background-color: white;
+	border: 5px solid black;
+	border-radius: 15px;
+}
+.right-button {
+	padding: 2px;
+	color: red;
 	z-index: 10;
 	float: right;
+	position: relative;
+	bottom: 20px;
+	background-color: white;
+	border: 5px solid black;
+	border-radius: 15px;
+}
+.left-button:hover, .right-button:hover {
+	background-color: black;
 }
 .simpleSlide-slide {
-	min-height: 300px;
+	min-height: 400px;
 }
 
 /*IDs alphabetically*/
@@ -85,13 +103,12 @@ p {
 	width:960px;
 	margin: auto;
 	z-index:99;
-	
 }
 #logo { 
 	/*logo image replaces h1 text*/
 	width: 960px;
 	height: 210px;
-	margin:auto;
+	margin: auto;
 	background: url(../img/red_dawn_banner.png) no-repeat;
 	text-indent: 100%;
 	white-space: nowrap;
@@ -100,6 +117,7 @@ p {
 #news, #music, #tours, #merch, #bio, #connect{
 	margin: 0px 0px 600px 0px;
 	padding: 100px 0 0 0;
+	clear: both;
 }
 #porthole_back{
 	position:relative;
@@ -121,7 +139,6 @@ p {
 	height: 240px;
 	width: 240px;
 	background: url('../img/porthole_front.png') no-repeat;
-
 }
 #rect1, #rect2, #rect3, #rect4, #rect5, #rect6 { 
 	background-color:white;
@@ -130,6 +147,7 @@ p {
 	min-height:350px;
 	opacity:0.6;
 	padding:15px;	
+	clear: both;
 }
 #wrapper {
 	background-color:black;
