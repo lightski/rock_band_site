@@ -57,6 +57,7 @@ nav li{
 .bio_text {
 	width: 600px;
 	float: left;
+	margin-left: 20px;
 	white-space: pre-wrap;
 	word-wrap: break-word;
 }
@@ -143,7 +144,7 @@ nav li{
 #rect1, #rect2, #rect3, #rect4, #rect5, #rect6 { 
 	background-color:white;
 	border-radius:20px;
-	width:930;
+	width:930px;
 	min-height:350px;
 	opacity:0.6;
 	padding:15px;	
